@@ -1,0 +1,153 @@
+/* General Reset & Full Height */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Homepage */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: white;
+  text-align: center;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.home-buttons button {
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0984e3;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.home-buttons button:hover {
+  background-color: #0652dd;
+}
+
+/* Add/Edit User Form */
+.user-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+  margin: 40px auto;
+}
+
+.user-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.user-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.user-form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #273c75;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background-color: #192a56;
+}
+
+/* Dashboard Page */
+.dashboard {
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.dashboard h1 {
+  text-align: center;
+  color: #2f3640;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table-container {
+  overflow-x: auto;
+  margin: 20px auto;
+  max-width: 1000px;
+   background: linear-gradient(135deg, #74b9ff, #a29bfe);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #273c75;
+  color: white;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f5f6fa;
+  
+}
+
+.user-table tr:hover {
+  background-color: #dcdde1;
+   background: linear-gradient(135deg, #74b9ff, #a29bfe);
+}
+
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.edit-btn { background-color: #44bd32; }
+.edit-btn:hover { background-color: #2f8f23; }
+
+.delete-btn { background-color: #e84118; }
+.delete-btn:hover { background-color: #c23616; }
